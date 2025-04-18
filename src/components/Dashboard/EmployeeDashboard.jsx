@@ -4,13 +4,14 @@ import TaskListNumbers from '../other/TaskListNumbers'
 import TaskList from '../other/TaskList'
 
 
-const EmployeeDashboard = () => {
+const EmployeeDashboard = ({data}) => {
+  
   return (
     <div>
         <div className='p-10 bg-[#1C1C1C] h-screen'>
-            <Header/>
-            <TaskListNumbers/>
-            <TaskList/>
+            <Header data={data}/>
+            <TaskListNumbers data={data}/>
+            <TaskList data={data}/>
         </div>
     </div>
   )
